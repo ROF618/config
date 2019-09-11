@@ -101,6 +101,12 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+
+
+
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -115,4 +121,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-alias config ='/usr/bin/git --git-dir=/home/chris/.cfg/ --work-tree=/home/chris'
