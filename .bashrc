@@ -104,9 +104,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
-
-
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
