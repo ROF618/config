@@ -130,3 +130,6 @@ endif
 
 " Search is case insensitive
 set ic
+
+" Mapping of the F keys
+nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
