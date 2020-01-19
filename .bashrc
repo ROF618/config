@@ -103,6 +103,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias sudo='sudo '
+alias weather='curl wttr.in/houston'
+alias wowc='wine ~/Games/EPGC/WoW.exe'
+alias bluetooth='bluetoothctl'
+alias wifi='wicd-gtk'
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -119,5 +123,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export WOW=/home/chris/Games/EPGC
-export PATH=$PATH:$WOW
+#export WOW=/home/chris/Games/EPGC
+#export PATH=$PATH:$WOW
